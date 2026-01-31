@@ -1,0 +1,80 @@
+:root {
+  --instanet-primary: #009ddb;    /* Electric blue */
+  --instanet-secondary: #292d3e;  /* Dark blue-gray */
+  --instanet-accent: #4bb8ff;     /* Light blue accent */
+  --instanet-dark: #181c25;       /* Near black */
+  --instanet-light: #f7fafd;      /* Ultra pale blue */
+  --instanet-success: #28a745;
+  --instanet-danger: #dc3545;
+}
+
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--instanet-light);
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.navbar {
+  background: var(--instanet-secondary) !important;
+}
+.navbar-brand,
+.nav-link {
+  color: var(--instanet-light) !important;
+}
+.nav-link.active, .navbar-brand:hover {
+  color: var(--instanet-accent) !important;
+}
+
+.btn-primary {
+  background: var(--instanet-primary);
+  border-color: var(--instanet-primary);
+  color: var(--instanet-light);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: var(--instanet-accent);
+  border-color: var(--instanet-accent);
+  color: var(--instanet-dark);
+}
+
+.section-header, h1, h2, h3, h4 {
+  color: var(--instanet-light);
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(41,45,62,0.07);
+}
+
+.text-card {
+  background: var(--instanet-dark);
+  color: var(--instanet-light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+footer {
+  background: var(--instanet-secondary);
+  color: var(--instanet-light);
+  padding: 20px 0;
+}
+footer a {
+  color: var(--instanet-accent);
+}
+
+a {
+  color: var(--instanet-primary);
+}
+a:hover {
+  color: var(--instanet-accent);
+}
+
+.background-overlay {
+  position: fixed;
+  z-index: 0;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  background: rgba(10, 15, 25, 0.7); /* Dark overlay, adjust opacity as needed */
+}
